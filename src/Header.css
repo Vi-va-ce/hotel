@@ -1,0 +1,66 @@
+/* General styles */
+nav {
+    background-color: #00000000;
+    /* Adjust the background color as needed */
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    /* Adjust width as needed */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding: 60px 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar nav a:hover {
+    color: #a37d4c;
+    /* Change to the desired hover color */
+}
+
+.sidebar .menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media (min-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+
+    .lg\\:flex {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
